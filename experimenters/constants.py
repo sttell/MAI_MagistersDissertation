@@ -1,4 +1,5 @@
-from experimenters.sc import CNNExperiment, CMCExperiment, SCExperiment
+from experimenters.sc import SCExperiment
+from experimenters.cmc import CMCExperiment
 
 def _exp_to_kv(exp):
     return exp.get_name(), exp
@@ -6,7 +7,6 @@ def _exp_to_kv(exp):
 
 # Possible Experimenter classes
 EXPERIMENT_CLASSES = {
-    CNNExperiment,
     CMCExperiment,
     SCExperiment
 }
