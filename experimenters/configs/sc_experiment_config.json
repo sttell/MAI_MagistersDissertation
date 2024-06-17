@@ -1,0 +1,35 @@
+{
+  "dataset_split": {
+    "train": 70,
+    "test": 20,
+    "validation": 10,
+    "shuffle": true
+  },
+  "hyperparams": {
+    "bilateral_filter": {
+        "d": 15,
+        "sigma_color": 20,
+        "sigma_space": 100
+    },
+    "sobel_filter": {
+        "ksize": 3
+    },
+    "resize": {
+        "major_size": 32,
+        "interpolation": "INTER_AREA",
+        "convert_square": false
+    },
+    "augmentation": {
+        "aug_per_image": 4,
+        "flip_mode": "horizontal_and_vertical",
+        "rotation": 0.3,
+        "contrast": 0.1,
+        "brightness": 0.1
+    }
+  },
+  "model_params_grid": {
+    "svc": {},
+    "random_forest": {},
+    "gbdt": {}
+  }
+}

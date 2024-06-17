@@ -1,0 +1,31 @@
+{
+  "dataset_split": {
+    "train": 70,
+    "test": 20,
+    "validation": 10,
+    "shuffle": true
+  },
+  "hyperparams": {
+    "pattern": {
+        "radius": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+        "x_shift": [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5],
+        "y_shift": [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5],
+        "width": [2, 3, 4, 5, 6]
+    },
+    "bilateral_filter": {
+        "d": 15,
+        "sigma_color": 20,
+        "sigma_space": 100
+    },
+    "resize": {
+        "major_size": 64,
+        "interpolation": "INTER_AREA",
+        "convert_square": true
+    }
+  },
+  "model_params_grid": {
+    "svc": {},
+    "random_forest": {},
+    "gbdt": {}
+  }
+}
